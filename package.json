@@ -1,8 +1,9 @@
 {
-  "name": "randombytes",
+  "name": "@guld/randombytes",
   "version": "2.1.0",
   "description": "random bytes from browserify stand alone",
-  "main": "index.js",
+  "main": "randombytes.node.js",
+  "module": "randombytes.js",
   "scripts": {
     "test": "standard && node test.js | tspec",
     "phantom": "zuul --phantom -- test.js",
@@ -10,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:crypto-browserify/randombytes.git"
+    "url": "https://iramiller.com/src/js/randombytes/.git"
   },
   "keywords": [
     "crypto",
@@ -18,11 +19,7 @@
   ],
   "author": "",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/crypto-browserify/randombytes/issues"
-  },
-  "homepage": "https://github.com/crypto-browserify/randombytes",
-  "browser": "browser.js",
+  "homepage": "https://iramiller.com/src/js/randombytes",
   "devDependencies": {
     "phantomjs": "^1.9.9",
     "standard": "^10.0.2",
@@ -31,6 +28,6 @@
     "zuul": "^3.7.2"
   },
   "dependencies": {
-    "safe-buffer": "^5.1.0"
+    "@guld/safe-buffer": "../safe-buffer"
   }
 }
