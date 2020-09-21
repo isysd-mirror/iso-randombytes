@@ -1,7 +1,7 @@
 'use strict'
-import global from '../global/global.js'
-import { Process } from '../process/process.js'
-import { Buffer } from '../safe-buffer/safe-buffer.js'
+import global from '../always-global/global.js'
+import { Process } from '../iso-process/process.js'
+import { Buffer } from '../iso-safe-buffer/safe-buffer.js'
 global.process = Process.getProcess()
 
 // limit of Crypto.getRandomValues()

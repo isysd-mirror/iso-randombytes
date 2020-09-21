@@ -1,5 +1,5 @@
 var test = require('tape')
-var randomBytes = require('./')
+var randomBytes = require('./randombytes.node.js')
 var MAX_BYTES = 65536
 var MAX_UINT32 = 4294967295
 
